@@ -1,0 +1,31 @@
+:root {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+
+  scroll-behavior: smooth;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  --cyan-clr: hsl(180, 66%, 49%);
+  --dark-violet-clr: hsl(257, 27%, 26%);
+  --red-clr: hsl(0, 87%, 67%);
+
+  --gray-clr: hsl(0, 0%, 75%);
+  --gray-violet-clr: hsl(257, 7%, 63%);
+  --darker-blue-clr: hsl(255, 11%, 22%);
+  --darker-violet-clr: hsl(260, 8%, 14%);
+
+  --font-500-wt: 500;
+  --font-700-wt: 700;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+
+  font-size: 18px;
+}
