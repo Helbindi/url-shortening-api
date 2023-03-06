@@ -18,7 +18,7 @@ function Navigation() {
   }
   return (
     <header className="nav-header">
-      <img src={logo} alt="shortly-logo" />
+      <img className="nav-logo" src={logo} alt="shortly-logo" />
       <img
         className="mobile-nav-icon"
         src={mobileNav}
@@ -31,6 +31,7 @@ function Navigation() {
           <li>Pricing</li>
           <li>Resources</li>
         </ul>
+
         <div className="btn-group">
           <button className="login btn">Login</button>
           <button className="signup btn">Sign Up</button>
