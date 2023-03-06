@@ -1,7 +1,9 @@
 :root {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
+
   font-size: 18px;
+  font-weight: var(--font-500-wt);
 
   scroll-behavior: smooth;
   font-synthesis: none;
@@ -27,6 +29,12 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
+  position: relative;
+}
+
+.main-container {
+  min-height: 100%;
 }
 
 /* Navigation CSS */
@@ -60,7 +68,7 @@ nav {
   font-weight: var(--font-700-wt);
 
   position: absolute;
-  top: 100px;
+  top: 70px;
   left: 50%;
   transform: translate(-50%, 0%);
 }
@@ -77,10 +85,12 @@ ul {
 
   padding: 0;
   margin: 0;
-  border-bottom: 1px solid var(--gray-clr);
   width: 100%;
-
   list-style: none;
+}
+
+nav ul {
+  border-bottom: 1px solid var(--gray-clr);
 }
 
 li {
@@ -116,3 +126,82 @@ nav li:last-child {
 }
 
 /* Footer CSS */
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1em;
+  padding: 2em 1em;
+
+  color: white;
+  background-color: var(--darker-blue-clr);
+}
+
+footer h2 {
+  margin: 0;
+}
+
+footer p {
+  font-weight: var(--font-700-wt);
+}
+
+footer img {
+  height: 50px;
+}
+
+footer li {
+  font-size: 0.8rem;
+  color: var(--gray-violet-clr);
+}
+
+.links-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.5em;
+
+  margin: 2em;
+}
+
+.links-group img {
+  cursor: pointer;
+  height: 30px;
+}
+
+/* Hero CSS */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  padding-bottom: 3em;
+}
+
+.hero-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.hero-info h2 {
+  font-size: 2.1rem;
+  margin: 0;
+}
+
+.hero-info p {
+  color: var(--gray-violet-clr);
+}
+
+.hero-info button {
+  width: 50%;
+}

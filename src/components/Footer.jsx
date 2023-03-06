@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../assets/images/logo.svg";
 import fb from "../assets/images/icon-facebook.svg";
 import tw from "../assets/images/icon-twitter.svg";
 import pin from "../assets/images/icon-pinterest.svg";
@@ -8,10 +7,10 @@ import insta from "../assets/images/icon-instagram.svg";
 function Footer() {
   return (
     <footer>
-      <img src={logo} alt="shortly-logo" />
+      <h2>Shortly</h2>
 
-      <section>
-        <h2>Features</h2>
+      <section className="footer-features">
+        <p>Features</p>
         <ul>
           <li>Link Shortening</li>
           <li>Branded Links</li>
@@ -19,8 +18,8 @@ function Footer() {
         </ul>
       </section>
 
-      <section>
-        <h2>Resources</h2>
+      <section className="footer-resources">
+        <p>Resources</p>
         <ul>
           <li>Blog</li>
           <li>Developers</li>
@@ -28,8 +27,8 @@ function Footer() {
         </ul>
       </section>
 
-      <section>
-        <h2>Company</h2>
+      <section className="footer-company">
+        <p>Company</p>
         <ul>
           <li>About</li>
           <li>Our Team</li>

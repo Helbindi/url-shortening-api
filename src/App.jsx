@@ -8,9 +8,9 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="main-container">
       <Navigation />
-      {/* <Hero /> */}
+      <Hero />
       <Footer />
     </div>
   );
