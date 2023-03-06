@@ -1,5 +1,9 @@
 import React from "react";
 import logo from "../assets/images/logo.svg";
+import fb from "../assets/images/icon-facebook.svg";
+import tw from "../assets/images/icon-twitter.svg";
+import pin from "../assets/images/icon-pinterest.svg";
+import insta from "../assets/images/icon-instagram.svg";
 
 function Footer() {
   return (
@@ -34,7 +38,20 @@ function Footer() {
         </ul>
       </section>
 
-      <div className="links-group"></div>
+      <div className="links-group">
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src={fb} alt="facebook-icon" />
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src={tw} alt="twitter-icon" />
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src={pin} alt="pinterest-icon" />
+        </a>
+        <a href="" target="_blank" rel="noopener noreferrer">
+          <img src={insta} alt="instagram-icon" />
+        </a>
+      </div>
     </footer>
   );
 }

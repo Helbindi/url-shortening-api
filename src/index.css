@@ -1,6 +1,7 @@
 :root {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
+  font-size: 18px;
 
   scroll-behavior: smooth;
   font-synthesis: none;
@@ -13,7 +14,7 @@
   --dark-violet-clr: hsl(257, 27%, 26%);
   --red-clr: hsl(0, 87%, 67%);
 
-  --gray-clr: hsl(0, 0%, 75%);
+  --gray-clr: #bfbfbf;
   --gray-violet-clr: hsl(257, 7%, 63%);
   --darker-blue-clr: hsl(255, 11%, 22%);
   --darker-violet-clr: hsl(260, 8%, 14%);
@@ -26,6 +27,92 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-
-  font-size: 18px;
 }
+
+/* Navigation CSS */
+.nav-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+
+  position: relative;
+}
+
+.mobile-nav-icon {
+  cursor: pointer;
+  height: 30px;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  width: 60%;
+  padding: 2em 1em;
+  border-radius: 1em;
+
+  color: white;
+  background-color: var(--dark-violet-clr);
+  font-weight: var(--font-700-wt);
+
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+nav[aria-expanded="true"] {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid var(--gray-clr);
+  width: 100%;
+
+  list-style: none;
+}
+
+li {
+  cursor: pointer;
+}
+
+nav li:last-child {
+  margin-bottom: 1em;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  border-style: none;
+  color: white;
+  background-color: var(--cyan-clr);
+  font-weight: var(--font-700-wt);
+  font-size: 18px;
+
+  width: 100%;
+  height: 48px;
+  border-radius: 2em;
+}
+
+.login {
+  background-color: initial;
+}
+
+/* Footer CSS */
