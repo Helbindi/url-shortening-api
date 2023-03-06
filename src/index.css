@@ -285,7 +285,7 @@ footer li:hover {
   color: #e8686b;
   font-size: 0.8rem;
   position: absolute;
-  bottom: 0.5em;
+  top: 0.5em;
   left: 3em;
 }
 
@@ -532,6 +532,10 @@ footer li:hover {
   .short-link {
     flex-direction: row;
     align-items: center;
+  }
+
+  .empty-link {
+    bottom: 0.5em;
   }
 
   .copy {
