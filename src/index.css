@@ -65,7 +65,7 @@ nav {
   align-items: center;
   justify-content: center;
   gap: 1em;
-  width: 60%;
+  width: 70%;
   padding: 2em 1em;
   border-radius: 1em;
 
@@ -252,6 +252,7 @@ footer li:hover {
   padding: 2em;
   border-radius: 1em;
   width: 80%;
+  margin-top: -10em;
 
   background-color: var(--dark-violet-clr);
 
@@ -259,6 +260,7 @@ footer li:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
 .shortener input[type="text"] {
@@ -274,6 +276,19 @@ footer li:hover {
   outline: none;
 }
 
+.no-link {
+  border-style: initial !important;
+  border: 3px solid #e8686b !important;
+}
+
+.empty-link {
+  color: #e8686b;
+  font-size: 0.8rem;
+  position: absolute;
+  bottom: 0.5em;
+  left: 3em;
+}
+
 .shortener input[type="text"]::placeholder {
   color: var(--gray-violet-clr);
 }
@@ -285,9 +300,21 @@ footer li:hover {
 
 .shorten-btn {
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.shorten-links {
+.shorten-btn img {
+  height: 24px;
+  background: var(--cyan-clr);
+}
+
+.shorten-btn:disabled {
+  background-color: var(--light-gray-clr);
+}
+
+.shorten-link {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -306,12 +333,21 @@ footer li:hover {
   gap: 1em;
 }
 
+.short-link img {
+  cursor: pointer;
+  height: 20px;
+}
+
 .shortened {
   color: var(--cyan-clr);
 }
 
 .copy {
   border-radius: 10px;
+}
+
+.copied {
+  background-color: var(--dark-violet-clr);
 }
 
 /* About CSS */
@@ -321,10 +357,11 @@ footer li:hover {
   align-items: center;
   text-align: center;
   gap: 5em;
+  margin-top: 3em;
 }
 
 .about-title {
-  margin: 1em 0;
+  margin: 0.5em 0;
 }
 
 .about-items {
@@ -376,6 +413,26 @@ footer li:hover {
 
 .about-container p {
   color: var(--gray-violet-clr);
+}
+
+.boost-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  padding: 5em 1em;
+
+  color: white;
+  background-color: var(--dark-violet-clr);
+
+  background-image: url("/src/assets/images/bg-boost-mobile.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.boost-cta button {
+  width: 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -464,8 +521,9 @@ footer li:hover {
     width: 25%;
   }
 
-  .shorten-links {
+  .shorten-link {
     max-width: 1000px;
+    width: 90%;
     flex-direction: row;
     justify-content: space-between;
     padding: 1em 2em;
@@ -510,8 +568,17 @@ footer li:hover {
     margin-top: 10em;
   }
 
+  .about-container {
+    gap: 2em;
+    margin-top: 3em;
+  }
+
   .about-container article:first-child {
     max-width: 500px;
+  }
+
+  .boost-cta {
+    background-image: url("/src/assets/images/bg-boost-desktop.svg");
   }
 
   /* Footer CSS */
