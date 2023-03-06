@@ -467,6 +467,7 @@ footer li:hover {
     border-bottom: none;
     flex-direction: row;
     align-items: center;
+    color: var(--gray-clr);
   }
 
   nav li:last-child {
@@ -475,6 +476,7 @@ footer li:hover {
 
   nav li:hover {
     font-weight: var(--font-700-wt);
+    color: initial;
   }
 
   .btn-group {
@@ -484,8 +486,13 @@ footer li:hover {
   }
 
   .login {
-    color: initial;
+    color: var(--gray-clr);
     width: 100px;
+  }
+
+  .login:hover {
+    color: black;
+    opacity: 1;
   }
 
   .signup {
